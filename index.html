@@ -1,202 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily SOAP: Read the Bible daily with SOAP</title>
+  <meta name="description" content="Daily SOAP is a free Bible reading app with a two-year plan, SOAP journaling and accountability groups. On iPhone, Android and the web.">
+  <meta name="apple-itunes-app" content="app-id=1448825436">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Daily SOAP app aims to help people read and meditate the Bible and give them easy access to personally discover the truth and beauty of God's Word.">
-    <meta name="author" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dailysoap.app/">
+  <meta property="og:title" content="Daily SOAP: Read the Bible daily with SOAP">
+  <meta property="og:description" content="Daily SOAP is a free Bible reading app with a two-year plan, SOAP journaling and accountability groups. On iPhone, Android and the web.">
+  <!-- TODO: og:image / twitter:image once the owner supplies a social share image -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Daily SOAP: Read the Bible daily with SOAP">
+  <meta name="twitter:description" content="Daily SOAP is a free Bible reading app with a two-year plan, SOAP journaling and accountability groups. On iPhone, Android and the web.">
 
-    <title>Daily SOAP</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <link rel="shortcut icon" href="/favicon/favicon-96x96.png" type="image/png">
-    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
-    <meta name="msapplication-TileColor" content="#2979FF">
-    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#2979FF">
+  <link rel="icon" href="/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#4077f6">
+  <meta name="theme-color" content="#4077f6">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/landing.css" rel="stylesheet">
+  <script src="js/features.js" defer></script>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="site-header-inner wrap">
+      <a class="logo" href="#top"><img class="logo-mark" src="img/app-icon.webp" width="48" height="48" alt=""><span>Daily <span class="hl">SOAP</span></span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#what">Features</a>
+        <a href="#soap">The SOAP method</a>
+        <a class="nav-pill" href="#download">Get the app</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/new-age.css" rel="stylesheet">
-
-    <!-- Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132533312-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-132533312-1');
-    </script>
-
-  </head>
-
-  <body id="page-top">
-<!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/contact.html">Contact</a>
-            </li>
-          </ul>
+  <main>
+    <section class="hero-bg" aria-labelledby="hero-title">
+      <div class="hero wrap">
+        <span class="pill">Free on iPhone, Android and the web</span>
+        <h1 id="hero-title"><span class="hl">Read</span> the Bible daily.<br><span class="hl">Reflect</span> on God's Word.<br><span class="hl">Grow</span> with others.</h1>
+        <p class="lead">Read a passage, write what you notice, apply it, and pray. Then share it with friends who keep you going.</p>
+        <div class="download-row">
+          <a href="https://apps.apple.com/us/app/id1448825436"><img class="badge" src="img/app-store-badge.svg" alt="Download Daily SOAP on the App Store"></a>
+          <a href="https://play.google.com/store/apps/details?id=net.hmcc.hongkong.dailysoap"><img class="badge" src="img/google-play-badge.svg" alt="Get Daily SOAP on Google Play"></a>
+          <a class="btn-web" href="https://web.dailysoap.app">Use the web version <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-8 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5"><strong>Daily SOAP</strong></h1>
-              <h1 class="mb-4">Discover the truth and beauty of God's Word daily</h1>
-              <h3 class="mb-3">
-                    Daily SOAP aims to help people read and meditate the Bible and gives them easy access to personally discover the truth and beauty of God's Word.
-              </h3>
-              <h3>
-                  The app is developed by a group of Christ-followers from the <a href="http://hongkong.hmcc.net">Harvest Mission Community Church of Hong Kong</a> who strive to be ALIVE disciples.
-              </h3>
-              <br>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger"><strong>Get app</strong></a>
-              <br>
-            </div>
-          </div>
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-container">
-                <div class="device-mockup iphone6_plus portrait white">
-                  <div class="device">
-                    <div class="screen">
-                      <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                      <img src="img/apphomescreen.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="button">
-                      <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="features" id="what" aria-labelledby="what-title">
+      <div class="features-head">
+        <h2 id="what-title">Made for your <span class="hl">daily time</span> with God</h2>
+        <p class="lead">Spend 15 to 30 minutes in God's Word, then carry it with you for the rest of the day.</p>
       </div>
-    </header>
-
-    <section class="download" id="aboutSOAP">
-      <div class="container">
-          <div class="row justify-content-md-center">
-              <div class="col-md-10 mx-auto">
-              <h2 class="section-heading"><b>Abide in Christ</b></h2>
-              <h3>Connect with God and abide in Him daily using the Daily SOAP app to read and meditate on a passage.</h3>
-              <br/><br/><br/>
-            </div>
-
-            <div class="row">
-                <div class="col justify-content-md-center text-center">
-                  <i class="fa fa-bible" style="font-size:120px; color:#FDCA4D;"></i>
-                  <br/><br/>
-                  <h3>Read the entire Bible in 1-2 years</h3>
-                </div>
-                <div class="col justify-content-md-center text-center">
-                  <i class="fa fa-clock" style="font-size:120px; color:#FDCA4D;"></i>
-                  <br/><br/>
-                  <h3>Spend 15-30 minutes daily in God's Word</h3>
-                </div>
-              <div class="col justify-content-md-center text-center">
-                <i class="fa fa-mobile-alt" style="font-size:120px; color:#FDCA4D;"></i>
-                <br/><br/>
-                <h3>Read and reflect on the go with Daily SOAP</h3>
-              </div>
-                <div class="col justify-content-md-center text-center">
-                  <i class="fa fa-plug" style="font-size:120px; color:#FDCA4D;"></i>
-                  <br/><br/>
-                  <h3>Abide in God for the rest of the day</h3>
-                </div>
-              </div>
+      <div class="feat-grid">
+        <div class="feat-steps">
+          <div class="feat-step is-active" data-feat="0">
+            <p class="eyebrow">01 · READ</p>
+            <h3 class="feat-title"><span class="hl">Read and meditate</span> on the Bible daily</h3>
+            <p>Follow a two-year plan that alternates between the Old and New Testament every few days. Pick any date to see its passage, or choose your own. Read in eight translations, including ESV, NIV and NLT.</p>
+            <img class="inline-shot" src="img/plan.webp" width="459" height="998" alt="Reading plan screen with today's passage and a plan calendar">
+          </div>
+          <div class="feat-step" data-feat="1">
+            <p class="eyebrow">02 · REFLECT</p>
+            <h3 class="feat-title"><span class="hl">Reflect on and apply</span> God's Word in your life</h3>
+            <p>Write a SOAP entry for each reading: the verse that speaks to you, what you notice, how you'll apply it, and a prayer. Your past entries stay with you to revisit and edit.</p>
+            <img class="inline-shot" src="img/reflect.webp" width="459" height="998" alt="SOAP entry screen with Scripture, Observation, Application and Prayer cards" loading="lazy">
+          </div>
+          <div class="feat-step" data-feat="2">
+            <p class="eyebrow">03 · SHARE</p>
+            <h3 class="feat-title"><span class="hl">Share</span> your SOAP entries with others</h3>
+            <p>Send a SOAP to a friend or your accountability group in one tap. Encourage each other and stay on track together.</p>
+            <img class="inline-shot" src="img/share.webp" width="459" height="998" alt="Sharing a SOAP entry with others" loading="lazy">
+          </div>
+          <div class="feat-step" data-feat="3" id="groups">
+            <p class="eyebrow">04 · GROW TOGETHER</p>
+            <h3 class="feat-title">Grow together with <span class="hl">accountability groups</span></h3>
+            <p>Faith grows best with others. Share your SOAP with the people walking alongside you, and see what God is teaching them too.</p>
+          <div class="group-points">
+            <div class="group-point gp-green"><span><strong>Share to one group or all.</strong> Send a SOAP to the groups you choose in one tap.</span></div>
+            <div class="group-point gp-blue"><span><strong>See today's log.</strong> A daily feed shows who has shared, with reactions.</span></div>
+            <div class="group-point gp-orange"><span><strong>Nudge gently.</strong> Remind members who haven't shared yet, and give each group its own icon.</span></div>
+          </div>
+            <img class="inline-shot" src="img/groups.webp" width="459" height="998" alt="Accountability group feed showing SOAPs shared today by partners" loading="lazy">
+          </div>
         </div>
-        <br/><br/> <br/>
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <h2 class="section-heading"><b>SOAP</b></h2>
-            <h3>SOAP is a Bible reading tool that helps you engage with the Bible daily, reflect on and apply what God is saying through His Word.</h3>
-            <br>
-            <h2 class="section-heading text-left"><i class="fa fa-bible" style="font-size:60px"></i> Scripture</i></h2>
-            <h3>Read a passage of scripture daily and focus one one verse or passage that you believe God is using to speak to you.</h3>
-            <br>
-            <h2 class="section-heading text-left"><i class="fa fa-search" style="font-size:60px"></i> Observation</h2>
-            <h3>Write down your observations and things that caught your attention based on the passage you read.</h3>
-            <br>
-            <h2 class="section-heading text-left"><i class="fa fa-calendar-check" style="font-size:60px"></i> Application</h2>
-            <h3>Apply and personalize the passage by asking yourself how it applies to your life right now.</h3>
-            <br>
-            <h2 class="section-heading text-left"><i class="fa fa-praying-hands" style="font-size:60px"></i> Prayer</h2>
-            <h3>Pray and ask for God's help in responding to and living out His Word.</h3>
+        <div class="stage">
+          <div class="phone">
+            <img data-shot class="is-active" src="img/plan.webp" width="459" height="998" alt="">
+            <img data-shot class="" src="img/reflect.webp" width="459" height="998" alt="" loading="lazy">
+            <img data-shot class="" src="img/share.webp" width="459" height="998" alt="" loading="lazy">
+            <img data-shot class="" src="img/groups.webp" width="459" height="998" alt="" loading="lazy">
+          </div>
+          <div class="progress">
+            <button type="button" data-dot class="is-active" aria-label="Show Read" aria-current="step"><span></span></button>
+            <button type="button" data-dot class="" aria-label="Show Reflect"><span></span></button>
+            <button type="button" data-dot class="" aria-label="Show Share"><span></span></button>
+            <button type="button" data-dot class="" aria-label="Show Grow together"><span></span></button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="download bg-primary text-center" id="download">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Get SOAPing!</h2>
-            <h4>Our app is now available for Android and iOS</h4>
-            <h4>Download now to get started!</h4>
-            <br>
-            <div class="badges">
-              <a class="badge-link" href="https://play.google.com/store/apps/details?id=net.hmcc.hongkong.dailysoap"><img src="img/google-play-badge.svg" alt=""></a>
-              <a class="badge-link" href="https://itunes.apple.com/app/soapy-soap-bible-reading-app/id1448825436"><img src="img/app-store-badge.svg" alt=""></a>
-            </div>
+    <section class="soap" id="soap" aria-labelledby="soap-title">
+      <div class="soap-inner wrap">
+        <div class="soap-left">
+          <h2 id="soap-title">What is the <span class="hl">SOAP</span> method?</h2>
+          <p class="lead">SOAP is a simple way to study the Bible and remember what you read. Instead of just finishing a chapter, you slow down, write four short things, and respond to God.</p>
+          <div class="soap-cards">
+            <div class="soap-card"><h3>SCRIPTURE</h3><p>Read the day's passage. Pick the verse that God is speaking to you about and write it down.</p></div>
+            <div class="soap-card"><h3>OBSERVATION</h3><p>Write what you notice. What does it say about God? What caught your attention?</p></div>
+            <div class="soap-card"><h3>APPLICATION</h3><p>Make it personal. Respond practically to what God is saying to you today.</p></div>
+            <div class="soap-card"><h3>PRAYER</h3><p>Pray and ask for God's help to respond to His Word and live it out.</p></div>
+          </div>
+        </div>
+        <div class="soap-right">
+          <div class="example">
+            <span class="share-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg> Share</span>
+            <span class="label">Example entry</span>
+            <div class="field"><span class="label">Scripture</span><p>John 15:5</p></div>
+            <div class="field"><span class="label">Observation</span><p>Jesus says we can do nothing apart from Him. He keeps repeating the word &quot;abide&quot;.</p></div>
+            <div class="field"><span class="label">Application</span><p>Before my first meeting, I'll pause and ask what He wants me to do.</p></div>
+            <div class="field"><span class="label">Prayer</span><p>Lord, keep me close to You today.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <section class="download" id="download" aria-labelledby="download-title">
+      <div class="download-card">
+        <h2 id="download-title"><span class="hl">Get SOAPing</span> today</h2>
+        <p class="lead">Free to download. Pick the one that fits your device, or open it in your browser.</p>
+        <div class="download-row">
+          <a href="https://apps.apple.com/us/app/id1448825436"><img class="badge" src="img/app-store-badge.svg" alt="Download Daily SOAP on the App Store"></a>
+          <a href="https://play.google.com/store/apps/details?id=net.hmcc.hongkong.dailysoap"><img class="badge" src="img/google-play-badge.svg" alt="Get Daily SOAP on Google Play"></a>
+          <a class="btn-web" href="https://web.dailysoap.app">Use the web version <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
-
-  </body>
-
+  <footer class="site-footer">
+    <div class="footer-inner wrap">
+      <p>Daily SOAP is made by volunteers at <a href="http://hk.hmccglobal.org">Harvest Mission Community Church, Hong Kong</a>.</p>
+    </div>
+  </footer>
+</body>
 </html>
