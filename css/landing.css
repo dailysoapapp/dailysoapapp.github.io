@@ -102,6 +102,20 @@ a:focus-visible, button:focus-visible {
   box-shadow: 0 6px 18px rgba(64, 119, 246, .18);
 }
 
+/* Phones: logo and "Get the app" share the top row, section links sit underneath. */
+@media (max-width: 640px) {
+  .site-header-inner { position: relative; display: block; padding-top: 14px; padding-bottom: 6px; }
+  .logo { font-size: 22px; gap: 8px; min-height: 44px; }
+  .logo-mark { width: 36px; height: 36px; border-radius: 9px; }
+  .nav { gap: 0 20px; margin-top: 4px; }
+  .nav a.nav-pill { position: absolute; top: 14px; right: 24px; padding: 0 14px; font-size: 14px; }
+}
+@media (max-width: 374px) {
+  .logo { font-size: 20px; }
+  .logo-mark { width: 32px; height: 32px; border-radius: 8px; }
+  .nav a.nav-pill { padding: 0 11px; font-size: 13px; }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -380,6 +394,10 @@ h3.feat-title {
   }
   .soap { padding: 80px 24px; }
   .download-card { padding: 48px 24px; }
+}
+
+@media (max-width: 374px) {
+  .pill { padding: 6px 12px; font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
